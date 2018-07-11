@@ -1,0 +1,7 @@
+cluster ID   = CID-3e24d2c9-065b-4f82-8bc6-2d794282a3cf
+cluster Name = cluster1232
+mongodb ip   = 10.41.4.230
+mongodb port = 27017
+mongodb name = hadoopmon
+mongodb user = hm_was
+mongodb pwd  = was123

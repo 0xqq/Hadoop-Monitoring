@@ -1,0 +1,672 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='au theme template')
+    meta(name='author', content='Hau Nguyen')
+    meta(name='keywords', content='au theme template')
+    // Title Page
+    title Dashboard 3
+    // Fontfaces CSS
+    link(href='css/font-face.css', rel='stylesheet', media='all')
+    link(href='vendor/font-awesome-4.7/css/font-awesome.min.css', rel='stylesheet', media='all')
+    link(href='vendor/font-awesome-5/css/fontawesome-all.min.css', rel='stylesheet', media='all')
+    link(href='vendor/mdi-font/css/material-design-iconic-font.min.css', rel='stylesheet', media='all')
+    // Bootstrap CSS
+    link(href='vendor/bootstrap-4.1/bootstrap.min.css', rel='stylesheet', media='all')
+    // Vendor CSS
+    link(href='vendor/animsition/animsition.min.css', rel='stylesheet', media='all')
+    link(href='vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css', rel='stylesheet', media='all')
+    link(href='vendor/wow/animate.css', rel='stylesheet', media='all')
+    link(href='vendor/css-hamburgers/hamburgers.min.css', rel='stylesheet', media='all')
+    link(href='vendor/slick/slick.css', rel='stylesheet', media='all')
+    link(href='vendor/select2/select2.min.css', rel='stylesheet', media='all')
+    link(href='vendor/perfect-scrollbar/perfect-scrollbar.css', rel='stylesheet', media='all')
+    // Main CSS
+    link(href='css/theme.css', rel='stylesheet', media='all')
+  body.animsition
+    .page-wrapper
+      // HEADER DESKTOP
+      header.header-desktop3.d-none.d-lg-block
+        .section__content.section__content--p35
+          .header3-wrap
+            .header__logo
+              a.nav-link.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-haspopup='true', aria-expanded='false')  Cluster List
+              #clusterList-dropdown.dropdown-menu
+                -for(var i=0; i<clusters.length; i++)
+                  button.cluster-item(id=i name=clusters[i].clusterId)= clusters[i].clusterName
+
+            .header__navbar
+              ul.list-unstyled
+                li.has-sub
+                  a(href='#')
+                    i.fas.fa-tachometer-alt
+                    | Dashboard
+                    span.bot-line
+                  ul.header3-sub-list.list-unstyled
+                    li
+                      a(href='index.html') Dashboard 1
+                    li
+                      a(href='index2.html') Dashboard 2
+                    li
+                      a(href='index3.html') Dashboard 3
+                    li
+                      a(href='index4.html') Dashboard 4
+                li
+                  a(href='#')
+                    i.fas.fa-shopping-basket
+                    span.bot-line
+                    | eCommerce
+                li
+                  a(href='table.html')
+                    i.fas.fa-trophy
+                    span.bot-line
+                    | Features
+                li.has-sub
+                  a(href='#')
+                    i.fas.fa-copy
+                    span.bot-line
+                    | Pages
+                  ul.header3-sub-list.list-unstyled
+                    li
+                      a(href='login.html') Login
+                    li
+                      a(href='register.html') Register
+                    li
+                      a(href='forget-pass.html') Forget Password
+                li.has-sub
+                  a(href='#')
+                    i.fas.fa-desktop
+                    span.bot-line
+                    | UI Elements
+                  ul.header3-sub-list.list-unstyled
+                    li
+                      a(href='button.html') Button
+                    li
+                      a(href='badge.html') Badges
+                    li
+                      a(href='tab.html') Tabs
+                    li
+                      a(href='card.html') Cards
+                    li
+                      a(href='alert.html') Alerts
+                    li
+                      a(href='progress-bar.html') Progress Bars
+                    li
+                      a(href='modal.html') Modals
+                    li
+                      a(href='switch.html') Switchs
+                    li
+                      a(href='grid.html') Grids
+                    li
+                      a(href='fontawesome.html') FontAwesome
+                    li
+                      a(href='typo.html') Typography
+            .header__tool
+              .header-button-item.has-noti.js-item-menu
+                i.zmdi.zmdi-notifications
+                .notifi-dropdown.notifi-dropdown--no-bor.js-dropdown
+                  .notifi__title
+                    p You have 3 Notifications
+                  .notifi__item
+                    .bg-c1.img-cir.img-40
+                      i.zmdi.zmdi-email-open
+                    .content
+                      p You got a email notification
+                      span.date April 12, 2018 06:50
+                  .notifi__item
+                    .bg-c2.img-cir.img-40
+                      i.zmdi.zmdi-account-box
+                    .content
+                      p Your account has been blocked
+                      span.date April 12, 2018 06:50
+                  .notifi__item
+                    .bg-c3.img-cir.img-40
+                      i.zmdi.zmdi-file-text
+                    .content
+                      p You got a new file
+                      span.date April 12, 2018 06:50
+                  .notifi__footer
+                    a(href='#') All notifications
+              .header-button-item.js-item-menu
+                i.zmdi.zmdi-settings
+                .setting-dropdown.js-dropdown
+                  .account-dropdown__body
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-account
+                        | Account
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-settings
+                        | Setting
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-money-box
+                        | Billing
+                  .account-dropdown__body
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-globe
+                        | Language
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-pin
+                        | Location
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-email
+                        | Email
+                    .account-dropdown__item
+                      a(href='#')
+                        i.zmdi.zmdi-notifications
+                        | Notifications
+              .account-wrap
+                .account-item.account-item--style2.clearfix.js-item-menu
+                  .image
+                    img(src='images/icon/avatar-01.jpg', alt='John Doe')
+                  .content
+                    a.js-acc-btn(href='#') john doe
+                  .account-dropdown.js-dropdown
+                    .info.clearfix
+                      .image
+                        a(href='#')
+                          img(src='images/icon/avatar-01.jpg', alt='John Doe')
+                      .content
+                        h5.name
+                          a(href='#') john doe
+                        span.email johndoe@example.com
+                    .account-dropdown__body
+                      .account-dropdown__item
+                        a(href='#')
+                          i.zmdi.zmdi-account
+                          | Account
+                      .account-dropdown__item
+                        a(href='#')
+                          i.zmdi.zmdi-settings
+                          | Setting
+                      .account-dropdown__item
+                        a(href='#')
+                          i.zmdi.zmdi-money-box
+                          | Billing
+                    .account-dropdown__footer
+                      a(href='#')
+                        i.zmdi.zmdi-power
+                        | Logout
+      // END HEADER DESKTOP
+      
+      // PAGE CONTENT
+      .page-content--bgf7
+        .main-content
+          div(class="main-header row" id='main-header-row')
+            .col-lg-6
+              .row(id='main-header-row-title')
+            .col-lg-6
+              .row(id='main-header-row-buttons')
+          div(id="content-layout")
+
+          //- block content
+        //- section.welcome.p-t-20
+        //-   .container
+        //-     .row
+        //-       .col-md-12
+        //-         h1.title-4
+        //-           | Welcome
+        //-         hr.line-seprate
+        // COPYRIGHT
+        section.p-t-60.p-b-20
+          .container
+            .row
+              .col-md-12
+                .copyright
+                  p
+                    | Copyright © 2018 Colorlib. All rights reserved. Template by
+                    a(href='https://colorlib.com') Colorlib
+                    | .
+        // END COPYRIGHT
+    // Jquery JS
+    script(src='vendor/jquery-3.2.1.min.js')
+    // Bootstrap JS
+    script(src='vendor/bootstrap-4.1/popper.min.js')
+    script(src='vendor/bootstrap-4.1/bootstrap.min.js')
+    // Vendor JS
+    script(src='vendor/slick/slick.min.js')
+    script(src='vendor/wow/wow.min.js')
+    script(src='vendor/animsition/animsition.min.js')
+    script(src='vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')
+    script(src='vendor/counter-up/jquery.waypoints.min.js')
+    script(src='vendor/counter-up/jquery.counterup.min.js')
+    script(src='vendor/circle-progress/circle-progress.min.js')
+    script(src='vendor/perfect-scrollbar/perfect-scrollbar.js')
+    script(src='vendor/chartjs/Chart.bundle.min.js')
+    script(src='vendor/select2/select2.min.js')
+    // Main JS
+    script(src='js/main.js')
+    script.
+      var tick = 15;
+      var etime = new Date().getTime() / 1000;
+      var stime = etime - 3600;
+      
+      
+      //- hdfs menu 
+      $('.cluster-item').click( function() {
+        var firsthost = ''
+        $('#main-header-row').html('<div class="col-lg-6"><div id="main-header-row-title" class="row"></div></div><div class="col-lg-6"><div id="main-header-row-buttons" class="row"></div></div>');
+        $("#main-header-row-title").html('<h1>HDFS</h1>')
+        $(".main-header").append('<hr class="line-seprate">')
+        $("#content-layout").html(hdfslayout)
+        $('.layout').html('')
+        $('.layout').html('<div class=row><div class=col-lg-3></div><div class=col-lg-3></div><div class=col-lg-3></div><div class=col-lg-3></div></div><div class=row></div><div class=row></div><div class=row></div>')
+    
+        //- namenode host button 
+        $.ajax({
+            url:'/cluster/hdfs',
+            dataType:'json',
+            type:'POST',
+            async: false,
+            data:{'idx':$('.cluster-item').attr("id")},
+            success:function(result){
+              var button = ""
+              firsthost = result['nnhost'][0]
+              for(var i=0; i<result['nnhost'].length; i++){
+                button += "<div  class=\"col\" id=\"nn-div\"><button class=\"nnButton\">"+result['nnhost'][i]+"</button></div>"
+              }
+              $("#main-header-row-buttons").html(button);
+            }
+        });
+        //- heapUsage graph
+      })
+        //- 
+        //-   //- param : document.getElementById("")
+      var ajax_call = function(host){
+        $.ajax({
+            url:'/cluster/hdfs/nnButton/heapUsage',
+            dataType:'json',
+            type:'POST',
+            data:{'host':host, 'colName':'NameNode_jmx', 'stime':stime, 'etime':etime, 'tick':tick},
+            success:function(result){
+              //- console.log( result['data'])
+              lineGraph(document.getElementById('heapUsage-canvas'), 'Heap Used(%)', result['label'], result['data'])
+              var total=0;
+              for(var i=0; i<result['data'].length; i++){
+                total += result['data'][i]
+              }
+              $('#heapUsage-avg').append((total/result['data'].length).toFixed(2) + " %")
+            }
+        });
+        //- diskUsage graph
+        $.ajax({
+            url:'/cluster/hdfs/nnButton/diskUsage',
+            dataType:'json',
+            type:'POST',
+            data:{'host':host, 'colName':'NameNode_jmx', 'stime':stime, 'etime':etime, 'tick':tick},
+            success:function(result){
+              //- console.log( result['data'])
+              lineGraph(document.getElementById('diskUsage-canvas'), 'Disk Used(%)', result['label'], result['data'])
+              var total=0;
+              for(var i=0; i<result['data'].length; i++){
+                total += result['data'][i]
+              }
+              $('#diskUsage-avg').append((total/result['data'].length).toFixed(2) + " %")
+            }
+        });
+        //- blockInfo
+        $.ajax({
+            url:'/cluster/hdfs/nnButton/blockInfo',
+            dataType:'json',
+            type:'POST',
+            data:{'host':host},
+            success:function(result){
+              var blockSize = result['blockInfo'].blockSize;
+        
+              $('#replifactor').append(result['blockInfo'].replifactor)
+              $('#blockSize').append(parseInt(blockSize/1024/1024)+'mb')
+              $('#totalFile').append(result['blockInfo'].totalFile)
+              $('#totalBlock').append(result['blockInfo'].totalBlock)
+            }
+        });
+        //- headline text
+        $.ajax({
+            url:'/cluster/hdfs/nnButton/headline',
+            dataType:'json',
+            type:'POST',
+            data:{'host':host},
+            success:function(result){              
+              $('#static-text-1').append(result['headline'].HAState)
+              $('#static-text-2').append(result['headline'].live+" / "+result['headline'].total)
+              $('#static-text-3').append(result['headline'].CapacityUsed)
+              $('#static-text-4').append(result['headline'].MemHeapUsedM)
+              $('#static-text-5').append(result['headline'].MissingBlocks)
+              $('#static-text-6').append(result['headline'].CorruptBlocks)
+              
+              //- color change
+              if(result['headline'].HAState == "standby" || result['headline'].HAState == "active"){
+                document.getElementById("statistic__item-1").className += " statistic__item--green";
+              }else{
+                document.getElementById("statistic__item-1").className += " statistic__item--red";
+              }
+              //- color change
+              if(result['headline'].live == result['headline'].total){
+                document.getElementById("statistic__item-2").className += " statistic__item--green";
+              }else{
+                document.getElementById("statistic__item-2").className += " statistic__item--red";
+              }
+              //- color change
+              if(result['headline'].CapacityUsed < 30){
+                document.getElementById("statistic__item-3").className += " statistic__item--green";
+              }else if(result['headline'].CapacityUsed > 70){
+                document.getElementById("statistic__item-3").className += " statistic__item--red";
+              }else{
+                document.getElementById("statistic__item-3").className += " statistic__item--orange";
+              }
+              //- color change
+              if(result['headline'].MemHeapUsedM < 30){
+                document.getElementById("statistic__item-4").className += " statistic__item--green";
+              }else if(result['headline'].MemHeapUsedM > 70){
+                document.getElementById("statistic__item-4").className += " statistic__item--red";
+              }else{
+                document.getElementById("statistic__item-4").className += " statistic__item--orange";
+              }
+              //- color change
+              if(result['headline'].MissingBlocks > 0){
+                document.getElementById("statistic__item-5").className += " statistic__item--red";
+              }else{
+                document.getElementById("statistic__item-5").className += " statistic__item--green";
+              }
+              //- color change
+              if(result['headline'].CorruptBlocks > 0){
+                document.getElementById("statistic__item-6").className += " statistic__item--red";
+              }else{
+                document.getElementById("statistic__item-6").className += " statistic__item--green";
+              }
+            }
+        });
+        //- datanode graph
+        $.ajax({
+            url:'/cluster/hdfs/nnButton/datanode',
+            dataType:'json',
+            type:'POST',
+            data:{'host':host, 'colName':'NameNode_jmx', 'stime':stime, 'etime':etime, 'tick':60},
+            success:function(result){
+              lineGraph(document.getElementById('dnState-canvas-2'), 'Data Node state', result['label'], result['data'])
+              doughutGraph(document.getElementById('dnState-canvas-1'), 'Current Data Node state', result['doughnut_label'], result['doughnut_count'])
+              if(result['nodelist'].lost){ addline(result['nodelist'].lost, 'Lost', $('#dn_table') )}
+              if(result['nodelist'].decom){ addline(result['nodelist'].decom, 'Decommission', $('#dn_table') )}
+              if(result['nodelist'].live){ addline(result['nodelist'].live, 'Live', $('#dn_table') )}
+            }
+        });
+      }
+      
+      var addline = function(list, state, elmt){
+        for(var i=0; i<list.length; i++){
+          var opt1 = "success"
+          var opt2 = "success"
+          if (list[i].disk > 40){ opt1=" warning "}
+          else if(list[i].disk > 70){ opt1=" danger "}
+          if (list[i].heap > 40){ opt1=" warning "}
+          else if(list[i].heap > 70){ opt1=" danger "}
+          
+          var td = "\
+          <tr>\
+              <td class=\"text-center\"><h6>"+list[i].name+"</h6></td>\
+              <td class=\"text-center\"><h6>"+state+"</h6></td>\
+              <td style=\"margin:auto\" class=\"text-center\">\
+                <div class=\"progress mb-2\"><div class=\"progress-bar bg-"+opt1+"\" role=\"progressbar\" style=\"width: "+list[i].disk+"%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">"+list[i].disk+"%</div></div>\
+              </td>\
+              <td style=\"margin:auto\" class=\"text-center\">\
+                <div class=\"progress mb-2\"><div class=\"progress-bar bg-"+opt2+"\" role=\"progressbar\" style=\"width: "+list[i].heap+"%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\">"+list[i].heap+"%</div></div>\
+              </td>\
+              </tr>\
+          "
+          elmt.append(td)
+        }
+      }
+      
+      var getMax = function(data){
+        var max = 0;
+        for (var i=0; i<data.length; i++){
+          if(data[i]>max)
+            max = data[i]
+        }
+        return max
+      }
+      
+      var second2time = function(t){
+        var h = parseInt((t%86400)/3600)
+        var m = parseInt((t%86400)%3600/60)
+        var s = parseInt((t%86400)%3600%60)
+        return h+':'+m+':'+s
+      }
+      
+      var lineGraph = function(elmt, name, _label, _data){
+        var yaxis_max = getMax(_data)
+        var stepSize = 10
+        if (yaxis_max <10) { yaxis_max = 10; stepSize=2; }
+        else if(yaxis_max <30){ yaxis_max = yaxis_max*1.5; stepSize=5; }
+        else { yaxis_max = yaxis_max*1.3}
+        
+        for (var i=0; i<_label.length;i++){
+          _label[i] = second2time(_label[i])
+        }
+        var max = getMax(_data)
+        var bodercolor = "#28a745"
+        if (max>30) { bodercolor = "#ffc107" }
+        if (max>60) { bodercolor = "#dc3545" }
+        var backgroundColor = "#28a745ba"
+        if (max>30) { backgroundColor = "#ffc107c2" }
+        if (max>60) { backgroundColor = "#dc3545c7" }
+        var myChart = new Chart(elmt, {
+          type: 'line',
+          data: {
+            labels: _label,
+            datasets: [
+              {
+                label: name,
+                borderColor: 'transparent',
+                pointHoverBackgroundColor: '#fff',
+                borderWidth: 0,
+                data: _data,
+                borderColor : bodercolor,
+                backgroundColor : backgroundColor
+              }
+            ]
+          },
+          options: {
+            maintainAspectRatio: true,
+            legend: {
+              display: false
+            },
+            responsive: true,
+            tooltips: {
+              mode: 'index',
+              intersect: false
+            },
+            hover: {
+              mode: 'nearest',
+              intersect: true
+            },
+            scales: {
+              xAxes: [{
+                scaleLabel :{
+                  display: false
+                },
+                gridLines: {
+                  drawOnChartArea: false,
+                  color: '#f2f2f2'
+                },
+                ticks: {
+                  fontFamily: "Poppins",
+                  fontSize: 12
+                }
+              }],
+              yAxes: [{
+                ticks: {
+                  beginAtZero: true,
+                  maxTicksLimit: 20,
+                  stepSize: stepSize,
+                  max: yaxis_max,
+                  fontFamily: "Poppins",
+                  fontSize: 12
+                },
+                gridLines: {
+                  display: true,
+                  color: '#f2f2f2'
+                }
+              }]
+            },
+            elements: {
+              point: {
+                radius: 0,
+                hitRadius: 10,
+                hoverRadius: 4,
+                hoverBorderWidth: 3
+              }
+            }
+          }
+        });
+      }
+      
+      var doughutGraph = function(elmt, name, _label, _data){    
+        var myChart = new Chart(elmt, {
+          type: 'doughnut',
+          data: {
+            datasets: [{
+              data: _data,
+              backgroundColor: [
+                "#17a2b8",
+                "#ffc107",
+                "#dc3545",
+                "rgba(0,0,0,0.07)"
+              ],
+              hoverBackgroundColor: [
+                "#17a2b8",
+                "#ffc107",
+                "#dc3545",
+                "rgba(0,0,0,0.07)"
+              ]
+  
+            }],
+            labels: _label
+          },
+          options: {
+            legend: {
+              position: 'top',
+              labels: {
+                fontFamily: 'Poppins'
+              }
+  
+            },
+            responsive: true
+          }
+        });
+      }
+      
+      $(document).on("click",".nnButton", function(){
+        $("#content-layout").html('')
+        $("#content-layout").html(hdfslayout)
+        $('.layout').html('')
+        $('.layout').html('<div class=row><div class=col-lg-3></div><div class=col-lg-3></div><div class=col-lg-3></div><div class=col-lg-3></div></div><div class=row></div><div class=row></div><div class=row></div>')
+        ajax_call($(this).html())
+
+      })
+      
+      var hdfslayout='\
+                <section class="statistic statistic2">\
+                  <div class="container">\
+                      <div class="row">\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-1">\
+                                  <h4 id="static-text-1" class="headline-text"></h3>\
+                                  <span class="desc">NameNode state</span>\
+                              </div>\
+                          </div>\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-2">\
+                                  <h4 id="static-text-2" class="headline-text"></h3>\
+                                  <span class="desc">DataNode Live</span>\
+                              </div>\
+                          </div>\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-3">\
+                                  <h4 id="static-text-3" class="headline-text"></h3>\
+                                  <span class="desc">Disk Used</span>\
+                              </div>\
+                          </div>\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-4">\
+                                  <h4 id="static-text-4" class="headline-text"></h3>\
+                                  <span class="desc">Heap Used</span>\
+                              </div>\
+                          </div>\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-5">\
+                                  <h4 id="static-text-5" class="headline-text"></h3>\
+                                  <span class="desc">Missig Blocks</span>\
+                              </div>\
+                          </div>\
+                          <div class="col">\
+                              <div class="statistic__item" id="statistic__item-6">\
+                                  <h4 id="static-text-6" class="headline-text"></h3>\
+                                  <span class="desc">Currupt Blocks</span>\
+                              </div>\
+                          </div>\
+                      </div>\
+                  </div>\
+              </section> \
+              <section>\
+                <div class="au-card">\
+                  <span><h3>Data Node State</h3></span>\
+                  <div class="row">\
+                    <div id="dnState-graph-1" class="col"><canvas id="dnState-canvas-1"></canvas></div>\
+                    <div id="dnState-graph-2" class="col"><canvas id="dnState-canvas-2"></canvas></div>\
+                    <div class="table-responsive table--no-card m-b-30 col">\
+                        <table class="table table-borderless table-striped table-earning">\
+                            <thead>\
+                                <tr>\
+                                    <th class="text-center">host</th>\
+                                    <th class="text-center">state</th>\
+                                    <th class="text-center">disk</th>\
+                                    <th class="text-center">heap</th>\
+                                </tr>\
+                            </thead>\
+                            <tbody id="dn_table">\
+                            </tbody>\
+                        </table>\
+                    </div>\
+                  </div>\
+                </div>\
+              </section>\
+              <section>\
+                <div class="row">\
+                  <div id="diskUsage" class="au-card--norightmargin col">\
+                    <div class="row">\
+                      <div class="col"><h3>Disk Usage</h3></div>\
+                      <div class="col"><h5 id="diskUsage-avg">Avg : </h5></div>\
+                    </div>\
+                    <canvas id="diskUsage-canvas"></canvas>\
+                  </div>\
+                  <div id="heapUsage" class="au-card col">\
+                    <div class="row">\
+                      <div class="col"><h3>Heap Usage</h3></div>\
+                      <div class="col"><h5 id="heapUsage-avg">Avg : </h5></div>\
+                    </div>\
+                    <canvas id="heapUsage-canvas"></canvas>\
+                </div>\
+              </section>\
+              <section>\
+                <div class="au-card row">\
+                  <div class="col-lg-12">\
+                    <h3>Block Info</h3>\
+                    <div class="row">\
+                      <div class="col"><h6 id="replifactor">Replication Factor : </h6></div>\
+                      <div class="col"><h6 id="blockSize" >Block Size : </h6></div>\
+                      <div class="col"><h6 id="totalFile">Total Files : </h6></div>\
+                      <div class="col"><h6 id="totalBlock">Total Block : </h6></div>\
+                    </div>\
+                  </div>\
+                </div>\
+              </section>\
+          '
+// end document

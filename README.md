@@ -1,8 +1,8 @@
 # Hadoop-Monitoring  
   
 ## 시스템 개요
-	1. 데이터 수집 및 저장(hm-data_collect)
-	2. 웹 UI(hm-web)
+1. 데이터 수집 및 저장(hm-data_collect)
+2. 웹 UI(hm-web)
 	
 	
 ## 1. 데이터 수집 및 저장
@@ -15,12 +15,12 @@
 * Hadoop 역할에 따라 수집 스크립트가 다름
 	1. NN, RM : Namenode & Resource Manager
 	2. DN, NM : Datanode & Node Manager
-  
+	
 ### 2. 데이터 저장
 * Mongodb에 데이터 저장
 * pymongo package 사용
-
-
+	
+	
 ## 2. 웹 UI
 ### 1. 데이터 쿼리
 * Mongodb MapReduce 사용

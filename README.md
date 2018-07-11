@@ -2,7 +2,7 @@
   
 ## 시스템 개요
 1. [데이터 수집 및 저장(hm-data_collect)](https://github.com/jwkim-smu/Hadoop-Monitoring/blob/master/README.md#1-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%88%98%EC%A7%91-%EB%B0%8F-%EC%A0%80%EC%9E%A5)
-2. [웹 UI(hm-web)](https://github.com/jwkim-smu/Hadoop-Monitoring/blob/master/README.md#2-웹-UI)
+2. [웹 UI(hm-web)](https://github.com/jwkim-smu/Hadoop-Monitoring/blob/master/README.md#2-웹-ui)
 	
 	
 ## 1. 데이터 수집 및 저장
